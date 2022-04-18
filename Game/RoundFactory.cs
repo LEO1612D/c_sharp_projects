@@ -1,10 +1,9 @@
 ﻿using System;
 namespace Game
 {
-    public class RoundFactory
+    // Round Factory
+    abstract class RoundFactory
     {
-        public RoundFactory()
-        {
-        }
+        public abstract Round GetRound(string Round);
     }
 }

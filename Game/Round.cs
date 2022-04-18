@@ -1,10 +1,19 @@
 ﻿using System;
 namespace Game
 {
-    public class Round
+    // Round Interface
+    abstract class Round
     {
-        public Round()
-        {
-        }
+
+        public abstract string[] words { get; }
+        public abstract int roundPoint { get; }
+        public abstract bool roundEnd { get; set; }
+        public abstract void nextRound();
+        public abstract void useHint();
+        public abstract bool checkAnswer(string playerAnswer);
+        public abstract void roundPrompt();
+
+        public abstract int getTotalScore();
+
     }
 }
